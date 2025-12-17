@@ -12,13 +12,14 @@ namespace fibanaccifor
             n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Siin ob Fibonacci seeria kuni {0}: \n", n);
             Console.WriteLine($"{0}  {1}", prv, pre);
-            for (i  = 0; i <= n; i++)
+            for (i  = 3; i <= n; i++)
             {
                 trm = prv + pre;
-                Console.Write("{0} ", trm);
+                Console.Write(" {0} ", trm);
                 prv = pre;
                 pre = prv;
             }
+            Console.Write("\n");
         }
     }
 }
